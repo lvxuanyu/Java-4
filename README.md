@@ -26,6 +26,26 @@
 首先实例化两个研究生，S1和S2，Doctoral S1 = new Doctoral();用户输入的两名研究生信息使用方法S1.St(name1, sex1, age1);进行储存。
 调用S1.setPay(wmonth_1,name1,sex1,age1);方法，根据用户输入的信息进行计算并打印出研究生信息。在输入学期学费并调用方法打印后，继续调用S1.rate();计算税收。
 两个研究生根据先后顺序依次执行。
+# 四。核心代码
+1.Student.java(抽象类)
+public abstract class Student {
+	 public String name;  
+	 public int fee;   
+	 public Student(String name) {     //父类构造方法，系统默认为无参，如果写了有参的则没有无参的，可以写多个  
+	        super();  
+	        this.name = name;  
+	    }  
+	      
+	 public abstract void setFee(int fee);  
+	 public abstract int getFee();  
+ 
+}
+2.Salary.java(接口)
+public interface Salary {
+	public abstract int getSalary();  
+ }
+ # 五.实验结果
+
 
 
 
